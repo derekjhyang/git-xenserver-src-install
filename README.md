@@ -1,6 +1,5 @@
 git-xenserver-src-install
 =========================
-# Destription
   git installation in Citrix Xenserver
   
 # Installation
