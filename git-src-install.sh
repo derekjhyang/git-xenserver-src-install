@@ -34,9 +34,16 @@ autoconf
 make
 make install
 
-# test installation result
-git --version
-
 # clean up
 rm -rf ${GIT_DIR}
 rm -f ${GIT_TARBALL}
+
+# test installation result
+git --version
+
+# general config settings
+if [ $? == 0 ]; then
+    git config --global color.ui true
+    git config --global alias.st status
+    git config --global alias.co checkout
+fi
